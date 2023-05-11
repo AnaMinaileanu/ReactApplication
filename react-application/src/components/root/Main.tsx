@@ -4,6 +4,7 @@ import About from "../pages/About";
 import Dashboard from "../pages/Dashboard";
 import { Login } from "../open-id-connect/Login";
 import styled from "styled-components";
+import { useAuth } from "../shared/useAuth";
 
 /////// ---start styles region--- ////////
 const Navbar = styled.nav`
@@ -42,6 +43,7 @@ const Wrapper = styled.main`
 /////// ---end styles region--- ////////
 
 const Main = () => {
+    const {user} = useAuth();
     return(
         <>
          <Navbar>
@@ -56,7 +58,8 @@ const Main = () => {
                     <StyledNavLink to="/Dashboard">Dashboard</StyledNavLink>
                 </NavItem>
                 <NavItem>
-                    <StyledNavLink to="/Login">Login</StyledNavLink>
+                    {!user ? (<StyledNavLink to="/Login">Login</StyledNavLink>) 
+                    : (<StyledNavLink to="/Logout">Logout</StyledNavLink>)}
                 </NavItem>
             </NavItems>
          </Navbar>
