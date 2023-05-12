@@ -9,6 +9,7 @@ import { useEffect, useReducer, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { Dialog } from "@reach/dialog";
 import { createUserWithEmailAndPassword } from "firebase/auth";
+
 const StyledGoogleLoginButton = styled(GoogleLoginButton).attrs({
   iconSize: "16px",
 })`

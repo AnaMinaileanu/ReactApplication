@@ -10,9 +10,10 @@ const Logout = () => {
             await signOut(auth);
         })();
     }, [auth]);
+    
     return(
         <>
-        
+            
         </>
     );
 };

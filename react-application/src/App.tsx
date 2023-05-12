@@ -11,9 +11,9 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-        <Route path="/*" element={<Main/>}></Route>
-          <Route path="/Login" element={<Login/>}></Route>
-          <Route path="/Logout" element={<Logout/>}></Route>
+          <Route path="/*" element={<Main />}></Route>
+          <Route path="/Login" element={<Login />}></Route>
+          
         </Routes>
       </BrowserRouter>
     </>

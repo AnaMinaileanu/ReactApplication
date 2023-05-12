@@ -9,7 +9,7 @@ import { getAnalytics } from "firebase/analytics";
 import * as firebase from "firebase/app";
 import "firebase/auth";
 import { getAuth } from "firebase/auth";
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import { createUserWithEmailAndPassword, GoogleAuthProvider} from "firebase/auth";
 
 const firebaseConfig = {
   apiKey: "AIzaSyDoDsVLYAiEWzbW8_K2-YjbEuYehyuk-So",
