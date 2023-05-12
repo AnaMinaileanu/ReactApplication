@@ -39,6 +39,7 @@ const Wrapper = styled.main`
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
+  justifyContent: center;
 `;
 
 /////// ---end styles region--- ////////

@@ -1,39 +1,48 @@
+#subtitles {
 
-      
-  
-        #subtitles{
-         
-          color: #f2f2f2;
-          font-size: 20px;
-          text-align: center;
-          margin: 0;
-        }
-  
-        .mapcontainer{
-            width: 100%;
-            margin-top: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          
-        }
-  
-        .question{
-          width: 100%;
-          align-items: center;
-          justify-content: center;
-        }
-  
-       
-        #answers{
-          
-          color: #f2f2f2;
-          font-size: 10px;
-          text-align: center;
-          margin-top: 15px;
-          margin-bottom: 15px;
-        }
-  
-      
-          
-    
+  color: #f2f2f2;
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
+}
+
+.mapcontainer {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.question {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#answers {
+
+  color: #f2f2f2;
+  font-size: 10px;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+
+.mapcontainer {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.submit-button:hover {
+  background: #C8102E;
+  color: #fff;
+}

@@ -13,7 +13,7 @@ const Home = () => {
             <h1 id="subtitles">Where to find us?</h1>
             <p id="answers">Probably in one of the following places, with a beer in hand</p>
             <div className="mapcontainer">
-
+            <iframe src="https://www.google.com/maps/d/embed?mid=16bA-_Fm6lteUnHvs9d594i8Z1qtXrvaT&ehbc=2E312F" width="640" height="480"></iframe>
             </div>
 
         </div>
