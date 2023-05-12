@@ -1,4 +1,4 @@
-import { NavLink, Route, Routes } from "react-router-dom";
+import { NavLink, Route, Routes, useLocation } from "react-router-dom";
 import Home from "../pages/Home";
 import About from "../pages/About";
 import Dashboard from "../pages/Dashboard";
@@ -44,6 +44,7 @@ const Wrapper = styled.main`
 
 const Main = () => {
     const {user} = useAuth();
+    const currentLocation = useLocation();
     return(
         <>
          <Navbar>
@@ -57,9 +58,13 @@ const Main = () => {
                 <NavItem>
                     <StyledNavLink to="/Dashboard">Dashboard</StyledNavLink>
                 </NavItem>
+                
                 <NavItem>
-                    {!user ? (<StyledNavLink to="/Login">Login</StyledNavLink>) 
-                    : (<StyledNavLink to="/Logout">Logout</StyledNavLink>)}
+                    {user ? (<StyledNavLink to="/Logout">Logout</StyledNavLink>) 
+                    : (<StyledNavLink to="/Login" state={currentLocation.pathname}>Login</StyledNavLink>)}
+                </NavItem>
+                <NavItem>
+                {user ? (<></>) : (<StyledNavLink to="/Register">Register</StyledNavLink>)}
                 </NavItem>
             </NavItems>
          </Navbar>
