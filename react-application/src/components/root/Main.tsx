@@ -63,19 +63,18 @@ const Main = () => {
           </NavItem>
         </NavItems>
       </Navbar>
-      <Routes>
-      
-      
-        <Route path="/Home" element={<Home />}></Route>
 
-        <Route element={<PrivateRoute />}>
+      <Routes>
+        <Route path="/Home" element={<Home />}></Route>
+        {/*
+        <Route path="/Dashboard" element={<PrivateRoute />}>*/}
           <Route path="/Dashboard" element={<Dashboard />}></Route>
-        </Route>
+        {/*</Route>*/}
+        <Route path="/Login" element={<Login />}></Route>
         <Route path="/Logout" element={<Logout />}></Route>
         <Route index element={<Home />}></Route>
-   
       </Routes>
-      
+
     </>
 
   );

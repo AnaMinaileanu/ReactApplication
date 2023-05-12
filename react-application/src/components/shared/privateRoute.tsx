@@ -4,9 +4,10 @@ import { useAuth } from './useAuth';
 
 const PrivateRoute = () => {
     const { user } = useAuth();
+    console.log(user);
     return (
-        user ? <Navigate to="/Dashboard" /> : <Navigate to="/Login" />
+        !user ? <Navigate to="/Login" /> : <Outlet/>
     );
-}
+};
 
 export default PrivateRoute;

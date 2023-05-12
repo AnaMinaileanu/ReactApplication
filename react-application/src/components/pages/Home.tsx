@@ -13,7 +13,7 @@ const Home = () => {
             <h1 id="subtitles">Where to find us?</h1>
             <p id="answers">Probably in one of the following places, with a beer in hand</p>
             <div className="mapcontainer">
-                
+
             </div>
 
         </div>
